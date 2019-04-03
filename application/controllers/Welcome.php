@@ -18,18 +18,18 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->view('welcome_message');
-	}
-	public function queryDb(){
-        $this->load->model('signupModel'); 
-        try{
-        	echo $result=$this->signupModel->queryDb();
-        } catch  (Exception $e) {
-     		log_message('error', $e->getMessage());
-     		echo 'ERROR : ',  'Something went wrong !!!!'.$e->getMessage(), "\n";
- 		} 
+	// public function index()
+	// {
+	// 	$this->load->view('welcome_message');
+	// }
+	// public function queryDb(){
+ //        $this->load->model('signupModel'); 
+ //        try{
+ //        	echo $result=$this->signupModel->queryDb();
+ //        } catch  (Exception $e) {
+ //     		log_message('error', $e->getMessage());
+ //     		echo 'ERROR : ',  'Something went wrong !!!!'.$e->getMessage(), "\n";
+ // 		} 
 		
-	}
+	// }
 }
